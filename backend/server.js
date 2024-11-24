@@ -11,7 +11,7 @@ const app = express();
 
 // CORS Configuration
 const corsOptions = {
-  origin: 'https://savethedate-gzy9.onrender.com', // Allow only requests from localhost:3000 (your frontend)
+  origin: 'http://localhost:3000', // Allow only requests from localhost:3000 (your frontend)
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Add any methods your backend supports
   credentials: true, // If you are sending cookies or using sessions
 };
