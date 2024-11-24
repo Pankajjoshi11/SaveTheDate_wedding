@@ -13,7 +13,7 @@ export default function HostLogin() {
     e.preventDefault();
   
     try {
-      const response = await axios.post("https://savethedate-gzy9.onrender/api/hosts/login", {
+      const response = await axios.post("https://savethedate-gzy9.onrender.com/api/hosts/login", {
         email,
         password,
       });

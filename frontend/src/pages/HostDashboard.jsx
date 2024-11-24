@@ -10,7 +10,7 @@ const HostDashboard = () => {
   useEffect(() => {
     const fetchWeddings = async () => {
       try {
-        const response = await fetch(`https://savethedate-gzy9.onrender/api/hosts/${hostId}/weddings`);
+        const response = await fetch(`https://savethedate-gzy9.onrender.com/api/hosts/${hostId}/weddings`);
         const data = await response.json();
         setWeddings(data.weddings || []); // Safely setting weddings, default to an empty array if undefined
         setLoading(false);
@@ -26,7 +26,7 @@ const HostDashboard = () => {
   // Approve a request
   const handleApproveRequest = async (weddingId, userId) => {
     try {
-      const response = await fetch(`https://savethedate-gzy9.onrender/api/weddings/${weddingId}/approve`, {
+      const response = await fetch(`https://savethedate-gzy9.onrender.com/api/weddings/${weddingId}/approve`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -19,7 +19,7 @@ export default function HomePage() {
     const verifyUser = async () => {
       try {
         // Fetch user authentication status (assuming the endpoint is at root `/`)
-        const { data } = await axios.get(`https://savethedate-gzy9.onrender/api/guests/${userId}`, {
+        const { data } = await axios.get(`https://savethedate-gzy9.onrender.com/api/guests/${userId}`, {
           withCredentials: true,
         });
         

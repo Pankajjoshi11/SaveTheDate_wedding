@@ -71,7 +71,7 @@ export default function EnhancedWeddingDetails() {
 
   const fetchWeddingDetails = async () => {
     try {
-      const response = await fetch(`https://savethedate-gzy9.onrender/api/weddings/${id}/`);
+      const response = await fetch(`https://savethedate-gzy9.onrender.com/api/weddings/${id}/`);
       console.log(id)
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -115,7 +115,7 @@ export default function EnhancedWeddingDetails() {
   //     console.log('Sending UserId:', userId); // Log userId for debugging
   //     console.log('Wedding ID:', id); // Log wedding id for clarity
   
-  //     const response = await axios.patch(`https://savethedate-gzy9.onrender/api/weddings/${id}`, {
+  //     const response = await axios.patch(`https://savethedate-gzy9.onrender.com/api/weddings/${id}`, {
   //       userId, // Send userId in request body
   //     });
   
@@ -134,7 +134,7 @@ export default function EnhancedWeddingDetails() {
 
   const handleRequestAccess = async (id, userId) => {
     try {
-      const response = await fetch(`https://savethedate-gzy9.onrender/api/weddings/${id}/request`, {
+      const response = await fetch(`https://savethedate-gzy9.onrender.com/api/weddings/${id}/request`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

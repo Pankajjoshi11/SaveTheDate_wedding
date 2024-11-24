@@ -15,7 +15,7 @@ export default function Register() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://savethedate-gzy9.onrender/api/guests/register", {
+      const response = await axios.post("https://savethedate-gzy9.onrender.com/api/guests/register", {
         name,
         phone,
         email,
