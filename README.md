@@ -35,7 +35,7 @@ Ensure you have the following installed on your machine:
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Pankajjoshi11/SaveTheDate.git
+   git clone https://github.com/Pankajjoshi11/SaveTheDate_wedding.git
    ```
 
 2. Navigate to the project directory:
