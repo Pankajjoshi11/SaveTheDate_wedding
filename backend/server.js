@@ -5,11 +5,19 @@ const cookieparser = require('cookie-parser');
 const weddingRoutes = require('./routes/WeddingRoutes');
 const hostRoutes = require('./routes/HostRoutes');
 const guestRoutes = require('./routes/AuthRoutes');
-const jwtAuth = require('./middleware/AuthMiddleware'); 
-const stripeRoutes = require('./routes/StripeRoutes')
+const stripeRoutes = require('./routes/StripeRoutes');
 
 const app = express();
-app.use(cors());
+
+// CORS Configuration
+const corsOptions = {
+  origin: 'https://savethedate-gzy9.onrender.com', // Allow only requests from localhost:3000 (your frontend)
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Add any methods your backend supports
+  credentials: true, // If you are sending cookies or using sessions
+};
+
+// Use CORS middleware
+app.use(cors(corsOptions));
 
 // Connect to MongoDB
 connectDB();
