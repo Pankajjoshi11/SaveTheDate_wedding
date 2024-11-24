@@ -9,11 +9,7 @@ const jwtAuth = require('./middleware/AuthMiddleware');
 const stripeRoutes = require('./routes/StripeRoutes')
 
 const app = express();
-app.use(cors({
-  origin: 'http://localhost:3000',
-  method: ["GET", "POST"],
-  credentials: true,
-}));
+app.use(cors());
 
 // Connect to MongoDB
 connectDB();

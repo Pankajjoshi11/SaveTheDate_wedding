@@ -36,7 +36,7 @@ async function MakePayment() {
     };
 
     // Send a request to create a checkout session
-    const response = await fetch(`http://localhost:8000/create-checkout-session`, {
+    const response = await fetch(`https://savethedate-gzy9.onrender/create-checkout-session`, {
       method: "POST",
       headers: headers,
       body: JSON.stringify(body),

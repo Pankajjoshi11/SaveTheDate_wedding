@@ -10,7 +10,7 @@ const ImageCard = () => {
   useEffect(() => {
     const fetchWeddings = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/weddings/');
+        const response = await fetch('https://savethedate-gzy9.onrender/api/weddings/');
         console.log('Route params:', { userId });
 
         if (!response.ok) {

@@ -15,7 +15,7 @@ export default function HostRegister() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8000/api/hosts/register", {
+      const response = await axios.post("https://savethedate-gzy9.onrender/api/hosts/register", {
         name,
         phone,
         email,
