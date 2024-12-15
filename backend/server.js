@@ -11,13 +11,11 @@ const app = express();
 
 // CORS Configuration
 const corsOptions = {
-  origin: 'http://localhost:3000', // Allow only requests from localhost:3000 (your frontend)
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Add any methods your backend supports
-  credentials: true, // If you are sending cookies or using sessions
+  origin: '*', // Allow all origins (for testing only!)
 };
 
-// Use CORS middleware
 app.use(cors(corsOptions));
+
 
 // Connect to MongoDB
 connectDB();
