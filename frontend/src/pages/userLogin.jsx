@@ -24,7 +24,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://savethedate-gzy9.onrender.com/api/guests/login",
+        "https://savethedate-wedding.onrender.com/api/guests/login",
         { ...values },
         { withCredentials: true }
       );

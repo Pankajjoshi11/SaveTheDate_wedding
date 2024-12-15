@@ -10,7 +10,7 @@ const ImageCard = () => {
   useEffect(() => {
     const fetchWeddings = async () => {
       try {
-        const response = await fetch('https://savethedate-gzy9.onrender.com/api/weddings/', {
+        const response = await fetch('https://savethedate-wedding.onrender.com/api/weddings/', {
           method: 'GET',
           credentials: 'include', // Include cookies or authentication
           headers: {

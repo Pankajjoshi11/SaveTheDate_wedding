@@ -9,7 +9,7 @@ const PaymentSuccess = () => {
   useEffect(() => {
     const updatePaymentStatus = async () => {
       try {
-        const response = await fetch('https://savethedate-gzy9.onrender.com/api/payments/update-payment-status', {
+        const response = await fetch('https://savethedate-wedding.onrender.com/api/payments/update-payment-status', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

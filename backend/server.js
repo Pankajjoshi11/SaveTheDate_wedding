@@ -11,10 +11,13 @@ const app = express();
 
 // CORS Configuration
 const corsOptions = {
-  origin: '*', // Allow all origins (for testing only!)
+  origin: 'http://localhost:3000', // Specify your frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Supported HTTP methods
+  credentials: true, // Allow cookies and authentication headers
 };
 
 app.use(cors(corsOptions));
+
 
 
 // Connect to MongoDB

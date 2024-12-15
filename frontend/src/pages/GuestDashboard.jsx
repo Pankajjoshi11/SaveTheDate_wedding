@@ -14,7 +14,7 @@ const GuestDashboard = () => {
     const fetchApprovedWeddings = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`https://savethedate-gzy9.onrender.com/api/guests/${userId}/approved-weddings`);
+        const response = await fetch(`https://savethedate-wedding.onrender.com/api/guests/${userId}/approved-weddings`);
         const data = await response.json();
         if (data && Array.isArray(data.weddings)) {
           setApprovedWeddings(data.weddings);
@@ -35,7 +35,7 @@ const GuestDashboard = () => {
     const stripe = await stripePromise;
 
     try {
-      const response = await fetch(`https://savethedate-gzy9.onrender.com/api/payments/create-checkout-session`, {
+      const response = await fetch(`https://savethedate-wedding.onrender.com/api/payments/create-checkout-session`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -87,7 +87,7 @@ function WeddingForm() {
     });
 
     try {
-      const response = await axios.post('https://savethedate-gzy9.onrender.com/api/weddings/create', formDataToSend, {
+      const response = await axios.post('https://savethedate-wedding.onrender.com/api/weddings/create', formDataToSend, {
         headers: { 'Content-Type': 'multipart/form-data' }, // Important for file uploads
       });
       console.log('Response:', response.data);

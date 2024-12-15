@@ -36,7 +36,7 @@ async function MakePayment() {
     };
 
     // Send a request to create a checkout session
-    const response = await fetch(`https://savethedate-gzy9.onrender.com/create-checkout-session`, {
+    const response = await fetch(`https://savethedate-wedding.onrender.com/create-checkout-session`, {
       method: "POST",
       headers: headers,
       body: JSON.stringify(body),
